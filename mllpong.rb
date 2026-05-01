@@ -11,7 +11,7 @@ class Mllpong < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/novalagung/mllpong/releases/download/v1.0.0/mllpong_darwin_amd64.tar.gz"
-      sha256 "912c53bcfd63cc8ce7c4e27f860c627be3090ff528c37c212335476515a14be6"
+      sha256 "ee8007247e7aa15f1e6a029c2830e620184a0375f5c62cb869bb6d4409dfedc4"
 
       define_method(:install) do
         bin.install "mllpong"
@@ -19,7 +19,7 @@ class Mllpong < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/novalagung/mllpong/releases/download/v1.0.0/mllpong_darwin_arm64.tar.gz"
-      sha256 "4715c9bbc70b8a673758a77cf8f43498449ffbf31b2f5718e29dcef102a7c0a6"
+      sha256 "efb1deeb7d4067a8687c84fa6e946d4fc84298e20e834b0405857ca1786b23e7"
 
       define_method(:install) do
         bin.install "mllpong"
@@ -30,14 +30,14 @@ class Mllpong < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/novalagung/mllpong/releases/download/v1.0.0/mllpong_linux_amd64.tar.gz"
-      sha256 "b99b9c19e56fe14296faa3ba6852453f6c3d5b0592db8d3af01fe72c4710e9a1"
+      sha256 "85ec3151f98c14456fbcc5780b48b7a790d4235418ab2c11632a0d43f6b707e7"
       define_method(:install) do
         bin.install "mllpong"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/novalagung/mllpong/releases/download/v1.0.0/mllpong_linux_arm64.tar.gz"
-      sha256 "45fd2c88e8bfd33570c6f2d78240341e64a0e3baa84455ff806673fb49f7ef26"
+      sha256 "ba3e78d3087874ecdb396008b717b9d01f33cc3a287b35d5283b17a4b5df06d4"
       define_method(:install) do
         bin.install "mllpong"
       end
